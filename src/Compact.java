@@ -1,0 +1,20 @@
+public class Compact extends Cars {
+
+    private final int seatCapacity;
+
+    public Compact(long engineSerialNo, long price, int year, String brand, int seatCapacity) {
+        super(engineSerialNo, price, year, brand);
+        this.seatCapacity = seatCapacity;
+    }
+
+    public int getSeatCapacity() {
+        return seatCapacity;
+    }
+
+    @Override
+    public void getCarDetails() {
+        super.getCarDetails();
+        System.out.println("Seat Capacity: " + this.getSeatCapacity());
+        System.out.println("=====================================================================");
+    }
+}
